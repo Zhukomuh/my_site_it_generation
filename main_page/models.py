@@ -41,7 +41,6 @@ class Dish(models.Model):
 
 class About(models.Model):
     title = models.CharField(max_length=255, unique=True, db_index=True)
-    # description = models.TextField(max_length=1000, blank=True)
     description = HTMLField()
     video = models.URLField(help_text='enter url of video')
     photo = models.ImageField(upload_to='promo/%Y-%m-%d', blank=True)
@@ -51,7 +50,6 @@ class Events(models.Model):
     title = models.CharField(max_length=50, unique=True, db_index=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.TextField(max_length=500, blank=True)
-
     date = models.DateTimeField(help_text='Enter date and time of event')
     is_visible = models.BooleanField(default=True)
     photo = models.ImageField(upload_to='events/%Y-%m-%d', blank=True)
@@ -64,10 +62,12 @@ class Events(models.Model):
 
 
 class Reservation(models.Model):
-    phone_validator = RegexValidator(regex=r'^\+?3?8?0\d{2}[- ](\d[- ]?){7}$', message='Error phone number')
-
+    phone_validator = RegexValidator(regex=r'^(\d{3}[- .]?){2}\d{4}$', message='Error phone number')
+    email_validator = RegexValidator(regex=r'[a-zA-Z0-9]*(-?\.?[_a-zA-Z0-9])*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*',
+                                     message='Error email')
     name = models.CharField(max_length=50)
     phone_number = models.CharField(max_length=20, validators=[phone_validator])
+    email = models.CharField(max_length=50, validators=[email_validator])
     persons = models.SmallIntegerField()
     message = models.TextField(max_length=255, blank=True)
 
@@ -87,3 +87,35 @@ class Reservation(models.Model):
 class PhotoGallery(models.Model):
     photo = models.ImageField(upload_to='our_photo/%Y-%m-%d', blank=True)
     is_visible = models.BooleanField(default=True)
+
+
+class Chefs(models.Model):
+    name = models.CharField(max_length=50)
+    title = models.CharField(max_length=50)
+    photo = models.ImageField(upload_to='chefs/%Y-%m-%d', blank=True)
+    description = models.TextField(max_length=500, blank=True)
+    is_visible = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f'{self.name}'
+
+    class Meta:
+        ordering = (
+            'is_visible',
+        )
+
+
+class WhyUs(models.Model):
+    title = models.CharField(max_length=50)
+    position = models.SmallIntegerField()
+    photo = models.ImageField(upload_to='why_us/%Y-%m-%d', blank=True)
+    description = models.TextField(max_length=500, blank=True)
+    is_visible = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f'{self.title}'
+
+    class Meta:
+        ordering = (
+            'is_visible',
+        )

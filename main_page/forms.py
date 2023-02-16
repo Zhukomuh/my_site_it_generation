@@ -23,6 +23,16 @@ class ReservationForm(forms.ModelForm):
         'data-msg': "Please enter at least 4 chars",
 
     }))
+    email = forms.CharField(max_length=50, widget=forms.TextInput(attrs={
+        'type': "email",
+        'class': "form-control",
+        'name': "email",
+        'id': "email",
+        'placeholder': "Your Email",
+        'data-rule': "email",
+        'data-msg': "Please enter a valid email"
+    }))
+
     persons = forms.IntegerField(widget=forms.NumberInput(attrs={
         'type': "number",
         'class': "form-control",
@@ -43,4 +53,4 @@ class ReservationForm(forms.ModelForm):
 
     class Meta:
         model = Reservation
-        fields = ('name', 'phone_number', 'persons', 'message')
+        fields = ('name', 'email', 'phone_number', 'persons', 'message')

@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Category, Dish, About, Events, PhotoGallery, Reservation
+from .models import Category, Dish, About, Events, PhotoGallery, Reservation,Chefs,WhyUs
 
 admin.site.register(Reservation)
 
@@ -101,8 +101,54 @@ class EventsAdmin(admin.ModelAdmin):
 class PhotoGalleryAdmin(admin.ModelAdmin):
     list_display = [
         'photo',
+        'is_visible',
+    ]
+
+    list_editable = [
+        'is_visible',
     ]
 
     list_filter = [
         'is_visible',
+    ]
+
+
+@admin.register(Chefs)
+class ChefsAdmin(admin.ModelAdmin):
+    list_display = [
+        'name',
+        'title',
+        'photo',
+        'description',
+        'is_visible',
+
+    ]
+
+    list_editable = [
+        'is_visible',
+    ]
+
+    list_filter = [
+        'is_visible',
+    ]
+
+
+@admin.register(WhyUs)
+class WhyUsAdmin(admin.ModelAdmin):
+    list_display = [
+        'title',
+        'photo',
+        'description',
+        'is_visible',
+        'position'
+    ]
+
+    list_editable = [
+        'is_visible',
+        'position'
+    ]
+
+    list_filter = [
+        'is_visible',
+        'position'
     ]

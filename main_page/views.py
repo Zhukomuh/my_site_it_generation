@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
-from .models import Category, Dish, Events, About, PhotoGallery
-from django.http import HttpResponse
+from .models import Category, Dish, Events, About, PhotoGallery, Chefs, WhyUs, Reservation
+from django.contrib.auth.decorators import login_required, user_passes_test
 from .forms import ReservationForm
 
 
-# Create your views here.
+def is_manager(user):
+    return user.groups.filter(name='manager').exists()
 
 
 def main(request):
@@ -21,6 +22,8 @@ def main(request):
     about = About.objects.get()
     our_photo = PhotoGallery.objects.filter(is_visible=True)
     form_reserve = ReservationForm()
+    why_us = WhyUs.objects.filter(is_visible=True)
+    chefs = Chefs.objects.filter(is_visible=True)
 
     return render(request, 'main_page.html', context={
         'categories': categories,
@@ -30,5 +33,23 @@ def main(request):
         'events': events,
         'about': about,
         'our_photo': our_photo,
+        'why_us': why_us,
+        'chefs': chefs,
 
+    })
+
+
+@login_required(login_url='/login/')
+@user_passes_test(is_manager)
+def update_reservation(request, pk):
+    Reservation.objects.filter(pk=pk).update(is_processed=True)
+    return redirect('main_page:list_reservations')
+
+
+@login_required(login_url='/login/')
+@user_passes_test(is_manager)
+def list_reservations(request):
+    messages = Reservation.objects.filter(is_processed=False)
+    return render(request, 'reservations.html', context={
+        'reservations': messages
     })
