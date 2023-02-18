@@ -23,6 +23,11 @@ DATABASE_URL = 'postgresql://postgres:8nZTw4YacHVcZZ8hrGMo@containers-us-west-13
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-&o&q8f7q908is=46734kj1d!@3#7=lc@)b1@alg01n##w8121b'
+DB_NAME = os.environ.get('PGDATABASE')
+DB_PASSWORD = os.environ.get('PGPASSWORD')
+DB_USER = os.environ.get('PGUSER')
+DB_HOST = os.environ.get('PGHOST')
+DB_PORT = os.environ.get('PGPORT')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,6 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

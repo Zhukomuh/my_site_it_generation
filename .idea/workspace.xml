@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="debug true" />
+    <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="return">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_gen_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/it_gen_django/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +153,7 @@
       <workItem from="1676478017292" duration="1858000" />
       <workItem from="1676559535832" duration="1360000" />
       <workItem from="1676561238124" duration="3223000" />
-      <workItem from="1676734196514" duration="6690000" />
+      <workItem from="1676734196514" duration="7362000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1675949284365</created>
@@ -201,7 +204,35 @@
       <option name="project" value="LOCAL" />
       <updated>1676751829256</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hide secret key">
+      <created>1676754154017</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676754154017</updated>
+    </task>
+    <task id="LOCAL-00009" summary="hide secret key">
+      <created>1676754272751</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676754272751</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test CSRF_TRUSTED_ORIGINS">
+      <created>1676754372776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676754372776</updated>
+    </task>
+    <task id="LOCAL-00011" summary="return">
+      <created>1676754486990</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676754486990</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +255,10 @@
     <MESSAGE value="changes in settings" />
     <MESSAGE value="test changes" />
     <MESSAGE value="debug true" />
-    <option name="LAST_COMMIT_MESSAGE" value="debug true" />
+    <MESSAGE value="hide secret key" />
+    <MESSAGE value="test CSRF_TRUSTED_ORIGINS" />
+    <MESSAGE value="return" />
+    <option name="LAST_COMMIT_MESSAGE" value="return" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
