@@ -31,7 +31,7 @@ def main(request):
         'special_dishes': special_dishes,
         'form_reserve': form_reserve,
         'events': events,
-        'about': about,
+        # 'about': about,
         'our_photo': our_photo,
         'why_us': why_us,
         'chefs': chefs,
