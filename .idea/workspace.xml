@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="changes in settings">
+    <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="test changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it_gen_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/it_gen_django/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,7 @@
       <workItem from="1676478017292" duration="1858000" />
       <workItem from="1676559535832" duration="1360000" />
       <workItem from="1676561238124" duration="3223000" />
-      <workItem from="1676734196514" duration="5301000" />
+      <workItem from="1676734196514" duration="6044000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1675949284365</created>
@@ -184,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676737486502</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test changes">
+      <created>1676751043387</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676751043387</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test changes">
+      <created>1676751140235</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676751140235</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +217,8 @@
     <MESSAGE value="add db" />
     <MESSAGE value="rename" />
     <MESSAGE value="changes in settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in settings" />
+    <MESSAGE value="test changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="test changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

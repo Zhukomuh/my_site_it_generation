@@ -24,8 +24,7 @@ DATABASE_URL = 'postgresql://postgres:8nZTw4YacHVcZZ8hrGMo@containers-us-west-13
 SECRET_KEY = 'django-insecure-&o&q8f7q908is=46734kj1d!@3#7=lc@)b1@alg01n##w8121b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 ALLOWED_HOSTS = ['mysiteitgeneration-production.up.railway.app', ]
 
 # Application definition
