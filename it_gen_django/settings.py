@@ -16,6 +16,7 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['mysiteitgeneration-production.up.railway.app']]
 DATABASE_URL = 'postgresql://postgres:8nZTw4YacHVcZZ8hrGMo@containers-us-west-139.railway.app:7396/railway'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
