@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/templates/registration_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/migrations/0006_alter_reservation_phone_number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/migrations/0007_chefs_whyus.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/migrations/0008_chefs_title.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/migrations/0009_whyus_position.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/migrations/0010_reservation_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/templates/reservations.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_page/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/equirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/it_gen_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/it_gen_django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/it_gen_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/it_gen_django/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/book_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/templates/book_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/chefs.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/templates/chefs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/templates/why_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/templates/why_us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_gen_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/it_gen_django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_page/templates/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/templates/main_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +156,8 @@
       <workItem from="1676376244963" duration="4883000" />
       <workItem from="1676478017292" duration="1858000" />
       <workItem from="1676559535832" duration="1360000" />
-      <workItem from="1676561238124" duration="1189000" />
+      <workItem from="1676561238124" duration="3223000" />
+      <workItem from="1676734196514" duration="2086000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1675949284365</created>
@@ -188,6 +171,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add db" />
