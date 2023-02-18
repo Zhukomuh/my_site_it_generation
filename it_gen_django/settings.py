@@ -45,7 +45,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'it_gen_django.urls'
 
-CSRF_TRUSTED_ORIGINS = ['https://mysiteitgeneration-production.up.railway.app/']
+# CSRF_TRUSTED_ORIGINS = ['https://mysiteitgeneration-production.up.railway.app/']
 
 TEMPLATES = [
     {
