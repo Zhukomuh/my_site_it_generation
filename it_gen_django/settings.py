@@ -11,20 +11,22 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+DATABASE_URL = 'postgresql://postgres:8nZTw4YacHVcZZ8hrGMo@containers-us-west-139.railway.app:7396/railway'
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-&o&q8f7q908is=46734kj1d!@3#7=lc@)b1@alg01n##w8121b'
+SECRET_KEY = 'django-insecure-&o&q8f7q908is=46734kj1d!@3#7=lc@)b1@alg01n##w8121b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mysiteitgeneration-production.up.railway.app',]
+ALLOWED_HOSTS = ['mysiteitgeneration-production.up.railway.app', ]
 
 # Application definition
 
@@ -39,8 +41,6 @@ INSTALLED_APPS = [
     'tinymce',
     'account.apps.AccountConfig'
 ]
-
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,10 +77,8 @@ WSGI_APPLICATION = 'it_gen_django.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': {dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),
+                }
 }
 
 # Password validation
@@ -120,7 +118,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-                    )
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
