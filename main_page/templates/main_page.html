@@ -1,6 +1,7 @@
 {% extends 'index.html' %}
 
 {% block main_content %}
+    {% csrf_token %}
     {% include 'about.html' %}
 
     {% include 'why_us.html' %}

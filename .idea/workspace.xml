@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="try changes" />
+    <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="try changes">
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +152,7 @@
       <workItem from="1676478017292" duration="1858000" />
       <workItem from="1676559535832" duration="1360000" />
       <workItem from="1676561238124" duration="3223000" />
-      <workItem from="1676734196514" duration="9621000" />
+      <workItem from="1676734196514" duration="9975000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1675949284365</created>
@@ -292,7 +294,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676756801976</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="try changes">
+      <created>1676757178204</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1676757178204</updated>
+    </task>
+    <task id="LOCAL-00022" summary="try changes">
+      <created>1676757328345</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676757328345</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -4,6 +4,7 @@
     <section id="reserves">
         <div class="container">
             <div class="col-md-10 col-md-offset-1">
+                {% csrf_token %}
                 {% for item in reservations %}
                     <div class="row">
                         <div class="col-md-3">
