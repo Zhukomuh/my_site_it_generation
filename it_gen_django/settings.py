@@ -21,8 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-&o&q8f7q908is=46734kj1d!@3#7=lc@)b1@alg01n##w8121b'
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 ALLOWED_HOSTS = ['mysiteitgeneration-production.up.railway.app', ]
 
@@ -53,7 +56,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'it_gen_django.urls'
 
-CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS')
+CSRF_TRUSTED_ORIGINS = ['*.railway.app']
 
 TEMPLATES = [
     {
@@ -78,26 +81,11 @@ WSGI_APPLICATION = 'it_gen_django.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 DATABASE_URL = 'postgresql://postgres:8nZTw4YacHVcZZ8hrGMo@containers-us-west-139.railway.app:7396/railway'
 
-# DB_NAME = os.environ.get('PGDATABASE')
-# DB_PASSWORD = os.environ.get('PGPASSWORD')
-# DB_USER = os.environ.get('PGUSER')
-# DB_HOST = os.environ.get('PGHOST')
-# DB_PORT = os.environ.get('PGPORT')
 
 DATABASES = {
-    'default':
-    #     {
-    #     'ENGINE': 'django.db.backends.postgresql',
-    #     'NAME': DB_NAME,
-    #     'USER': DB_USER,
-    #     'PASSWORD': DB_PASSWORD,
-    #     'HOST': DB_HOST,
-    #     'PORT': DB_PORT,
-    # }
-    dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
+    'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
 }
-# db = dj_database_url.config()
-# DATABASES['default'].update(db)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

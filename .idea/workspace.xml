@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46e70825-1a6d-47d6-bc86-37f2030486ae" name="Changes" comment="try">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/it_gen_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/it_gen_django/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +153,7 @@
       <workItem from="1676478017292" duration="1858000" />
       <workItem from="1676559535832" duration="1360000" />
       <workItem from="1676561238124" duration="3223000" />
-      <workItem from="1676734196514" duration="11978000" />
+      <workItem from="1676734196514" duration="12882000" />
     </task>
     <task id="LOCAL-00001" summary="add db">
       <created>1675949284365</created>
@@ -350,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676758606843</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="try">
+      <created>1676805700089</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1676805700100</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
