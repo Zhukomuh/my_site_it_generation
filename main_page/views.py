@@ -19,7 +19,7 @@ def main(request):
     dishes = Dish.objects.filter(is_visible=True, is_special=False)
     special_dishes = Dish.objects.filter(is_visible=True, is_special=True)
     events = Events.objects.filter(is_visible=True)
-    # about = About.objects.get()
+    about = About.objects.get()
     our_photo = PhotoGallery.objects.filter(is_visible=True)
     form_reserve = ReservationForm()
     why_us = WhyUs.objects.filter(is_visible=True)
@@ -31,7 +31,7 @@ def main(request):
         'special_dishes': special_dishes,
         'form_reserve': form_reserve,
         'events': events,
-        # 'about': about,
+        'about': about,
         'our_photo': our_photo,
         'why_us': why_us,
         'chefs': chefs,
