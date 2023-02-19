@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'it_gen_django.urls'
 
-CSRF_TRUSTED_ORIGINS = ['https://mysiteitgeneration-production.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS')
 
 TEMPLATES = [
     {
